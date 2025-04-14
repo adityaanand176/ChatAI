@@ -15,7 +15,7 @@ struct messageView : View {
             if message.isUser {
                 HStack {
                     Spacer()
-                    Text(message.content)
+                    Text(.init(message.content))
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(Color.blue)
@@ -24,7 +24,7 @@ struct messageView : View {
                 }
             } else {
                 HStack {
-                    Text(message.content)
+                    Text(.init(message.content))
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(Color.gray.opacity(0.2))
