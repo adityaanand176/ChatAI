@@ -17,8 +17,8 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 
 ## 📱 Screenshots
 
-<img src="https://imgur.com/IKxNPUY.jpg" width="200" /> <img src="https://imgur.com/AKBiM8N.jpg" width="200" /> <img src="https://imgur.com/EXrhfY6.jpg" width="200" />
-<img src="https://imgur.com/Gnria4u.jpg" width="200" /> <img src="https://imgur.com/ItSSVWw.jpg" width="200" /> <img src="https://imgur.com/1TLZwZO.jpg" width="200" />
+<img src="https://imgur.com/IKxNPUY.jpg" width="250" /> <img src="https://imgur.com/AKBiM8N.jpg" width="250" /> <img src="https://imgur.com/EXrhfY6.jpg" width="250" />
+<img src="https://imgur.com/Gnria4u.jpg" width="250" /> <img src="https://imgur.com/ItSSVWw.jpg" width="250" /> <img src="https://imgur.com/1TLZwZO.jpg" width="250" />
 
 ---
 
