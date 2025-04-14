@@ -1,4 +1,4 @@
-# 🤖 ChatAI — Smart Conversational App
+# ChatAI — Smart Conversational App
 
 ChatAI is a sleek and powerful conversational application that integrates **DeepSeek API** via **OpenRouter** and leverages **Firebase** for authentication and account management. With a strong focus on API design, context-aware chat flow, and seamless user experience, ChatAI is designed to be both functional and developer-friendly.
 
