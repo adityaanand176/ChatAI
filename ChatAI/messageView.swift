@@ -19,7 +19,7 @@ struct messageView : View {
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(Color.blue)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                 }
             } else {
@@ -28,7 +28,6 @@ struct messageView : View {
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                         .background(Color.gray.opacity(0.2))
-                        .foregroundColor(.primary)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                     Spacer()
                 }

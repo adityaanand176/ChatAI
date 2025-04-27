@@ -28,7 +28,6 @@ struct ProfileView: View {
                             Text(user.email)
                                 .font(.caption)
                                 .foregroundStyle(Color(.blue))
-                            
                         }
                     }
                 }
@@ -59,7 +58,7 @@ struct rowView : View {
             Text(title)
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
         }
     }
 }

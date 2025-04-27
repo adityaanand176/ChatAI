@@ -16,8 +16,8 @@ struct Message : Identifiable {
 
 @MainActor
 class ChatController : ObservableObject {
-//    @Published var messages : [Message] = [.init(content: "Hello", isUser: false), .init(content: "Hello", isUser: true)]
-    @Published var messages : [Message] = []
+    @Published var messages : [Message] = [.init(content: "Hello", isUser: false), .init(content: "Hello", isUser: true)]
+//    @Published var messages : [Message] = []
     let openRouterService = AIProxy.openRouterDirectService(unprotectedAPIKey: constants.openRouterAPI.rawValue)
     
     func provideTitle(for conversation: String) async throws -> String{
