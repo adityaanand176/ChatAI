@@ -269,6 +269,7 @@ struct ConversationRow: View {
                 
                 VStack(alignment: .leading, spacing: 4) {
                     Text(conversation.title)
+                        .foregroundStyle(isSelected ? Color.white : .primary)
                         .fontWeight(.medium)
                         .lineLimit(1)
                     
