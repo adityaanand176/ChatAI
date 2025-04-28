@@ -7,17 +7,18 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 ## ✨ Features
 
 - 🔐 **Firebase Authentication** (Sign Up / Sign In / Delete Account)
+- 🧳 **Firebase Storage** (Message read and write functionality)
 - 💬 **Supports Markdown** Message gets all modern Markdown support such as Bold Text, italics, underline, etc.
 - 🔄 **DeepSeek API Integration** via OpenRouter
 - 🧠 **Context-Aware Chat**: Chat headline updates dynamically based on chat content
-- 🎨 **Polished UI** with responsive design
+- 🎨 **Polished UI** With support for Dark Mode!
 - 🧰 Modular and scalable **backend & network architecture**
 
 ---
 
 ## 📱 Screenshots
 
-<img src="https://imgur.com/IKxNPUY.jpg" width="250" /> <img src="https://imgur.com/AKBiM8N.jpg" width="250" /> <img src="https://imgur.com/EXrhfY6.jpg" width="250" />
+<img src="https://imgur.com/0jtnQCd.jpg" width="250" /> <img src="https://imgur.com/NdkkCH3.jpg" width="250" /> <img src="https://imgur.com/AsHkxrg.jpg" width="250" />
 <img src="https://imgur.com/Gnria4u.jpg" width="250" /> <img src="https://imgur.com/ItSSVWw.jpg" width="250" /> <img src="https://imgur.com/1TLZwZO.jpg" width="250" />
 
 ---
@@ -59,11 +60,12 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 ## <a target="_blank" href="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="35" height="35" /></a> Firebase Implementation
 
 - **Sign Up / Sign In / Delete Account**
-- Uses **Firebase Authentication SDK**
+- **Store Messages for each User**
+- Uses **Firebase Authentication SDK** and **FirebaseFirestore SDK**
 - Error handling with user feedback
 - Secure session management
 
-> See `AuthViewModel.swift` for functions and logic.
+> See `AuthViewModel.swift` and `conversationViewModel.swift` for functions and logic.
 
 ---
 
