@@ -20,11 +20,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct ChatAIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewModel = AuthViewModel()
+    @StateObject var chatController = ChatController(authViewModel: AuthViewModel())
     
     var body: some Scene {
         WindowGroup {
             validationView()
                 .environmentObject(viewModel)
+                .environmentObject(chatController)
         }
     }
 }
