@@ -30,6 +30,7 @@ class ChatController : ObservableObject {
     @Published var conversations: [Conversation] = []
     @Published var chatTitle : String = "New Chat"
     @Published var currentConversationId: String?
+    @Published var isTyping = false
     private let db = Firestore.firestore()
     let openRouterService = AIProxy.openRouterDirectService(unprotectedAPIKey: constants.openRouterAPI.rawValue)
     let fireStoreManager = FirestoreManager()
@@ -113,7 +114,13 @@ class ChatController : ObservableObject {
         
         do {
             try await saveMessage(userMessage, conversationId: conversationId)
+            await MainActor.run {
+                isTyping = true
+            }
             await getBotReply(for: userMessage, conversationId: conversationId)
+            await MainActor.run {
+                isTyping = false
+            }
         } catch {
             print("Error saving message: \(error)")
         }
@@ -248,6 +255,7 @@ class ChatController : ObservableObject {
             print("Could not get bot reply: \(error.localizedDescription)")
             await MainActor.run {
                 self.messages.append(Message(content: "Sorry, I encountered an error: \(error.localizedDescription)", isUser: false))
+                self.isTyping = false
             }
         }
     }

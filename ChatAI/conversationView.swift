@@ -73,7 +73,8 @@ struct conversationView: View {
                                     .clipShape(Circle())
                                     .padding(.vertical, 4)
                             }
-                            .disabled(string.isEmpty)
+                            .disabled(chatController.isTyping || string.isEmpty)
+                            .opacity(chatController.isTyping || string.isEmpty ? 0.6 : 1.0)
                         }
                         .padding()
                     }
