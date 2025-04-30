@@ -7,13 +7,14 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 ## ✨ Features
 
 - 🔐 **Firebase Authentication** (Sign Up / Sign In / Delete Account)
-- 🧳 **Firebase Storage** Message read and write functionality. Load all the messages for a specific conversation. Each user has it's own set of conversations and messages inside that conversation, pretty much exactly how ChatGPT application works
+- 🧳 **Firebase Storage** Message read and write functionality. Load all the messages for a specific conversation. Each user has their own set of conversations and messages inside that conversation, pretty much exactly how the ChatGPT application works
 - 💬 **Supports Markdown** Message gets all modern Markdown support such as Bold Text, italics, underline, etc.
 - 🔄 **DeepSeek API Integration** via OpenRouter
 - 🧠 **Context-Aware Chat**: Chat headline updates dynamically based on chat content
 - 🎨 **Polished UI** With support for Dark Mode!
 - 🧰 Modular and scalable **backend & network architecture**
-- 🔍 **Support for Search** Find exactly what you're looking for in the conversation sidebar with the Search function. 
+- 🔍 **Support for Search** Find exactly what you're looking for in the conversation sidebar with the Search function.
+- 👤 **Support for Persona Selection** Tailor the AI for your needs using the Persona Selector menu.
 
 ---
 
