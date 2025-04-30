@@ -31,6 +31,7 @@ class ChatController : ObservableObject {
     @Published var chatTitle : String = "New Chat"
     @Published var currentConversationId: String?
     @Published var isTyping = false
+    var selectedPersona: Persona = Personas.defaultPersona
     private let db = Firestore.firestore()
     let openRouterService = AIProxy.openRouterDirectService(unprotectedAPIKey: constants.openRouterAPI.rawValue)
     let fireStoreManager = FirestoreManager()
@@ -195,7 +196,7 @@ class ChatController : ObservableObject {
         }
     }
     
-    func loadUserConversations() async {
+    func loadUserConversations() async {    
         do {
             let conversationsRef = userConversationsRef()
             let snapshot = try await conversationsRef
@@ -225,12 +226,12 @@ class ChatController : ObservableObject {
     func getBotReply(for userMessage: Message, conversationId: String) async {
         let requestBody = OpenRouterChatCompletionRequestBody(
             messages: [
-                .system(content: .text("You are an assistant.")),
+                .system(content: .text(selectedPersona.systemPrompt)),
                 .user(content: .text(userMessage.content))
             ],
             includeReasoning: false,
             models: ["deepseek/deepseek-r1"],
-            temperature: 0.9
+            temperature: selectedPersona.temperature
         )
 
         do {
