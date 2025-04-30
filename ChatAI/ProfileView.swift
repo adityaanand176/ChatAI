@@ -35,12 +35,14 @@ struct ProfileView: View {
                     Button {
                         viewModel.signOut()
                     } label: {
-                        rowView(title: "Sign Out", imageName: "arrow.left.circle")
+                        rowView(title: "Sign Out", imageName: "arrow.left.circle", color: .primary)
+                            .foregroundStyle(Color.red)
                     }
                     Button {
                         viewModel.deleteAccount()
                     } label: {
-                        rowView(title: "Delete Account", imageName: "x.circle")
+                        rowView(title: "Delete Account", imageName: "x.circle", color: .red)
+                            .foregroundStyle(Color.red)
                     }
                 }
             }
@@ -51,6 +53,7 @@ struct ProfileView: View {
 struct rowView : View {
     let title: String
     let imageName: String
+    var color: Color? = nil
     var body: some View {
         HStack(){
             Image(systemName: imageName)
@@ -58,7 +61,7 @@ struct rowView : View {
             Text(title)
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .foregroundColor(.primary)
+                .foregroundStyle(color ?? .primary)
         }
     }
 }
