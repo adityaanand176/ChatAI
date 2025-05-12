@@ -59,7 +59,7 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 
 ---
 
-## <a target="_blank" href="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="35" height="35" /></a> Firebase Implementation
+## </a><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="firebase" width="42" height="42" /></a>  Firebase Implementation
 
 - **Sign Up / Sign In / Delete Account**
 - **Store Messages for each User**
