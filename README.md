@@ -111,11 +111,9 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 2. Setup dependencies:
    - Add your OpenRouter API key in Constants.swift
    - Get your own GoogleServiceInfo.plist file from Firebase
+   - Make sure the name is the same as stated.
 
-3. Run the app:
-   ```bash
-   open ChatAI.xcodeproj 
-   ```
+3. Run the app from the XCode Project File to your simulator or best use it on your iPhone!
 
 ---
 
