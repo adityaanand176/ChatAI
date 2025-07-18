@@ -45,7 +45,6 @@ struct ProfileView: View {
                             viewModel.signOut()
                         } label: {
                             rowView(title: "Sign Out", imageName: "arrow.left.circle", color: .primary)
-                                .foregroundStyle(Color.red)
                         }
                         Button {
                             viewModel.deleteAccount()
