@@ -7,13 +7,14 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 ## ✨ Features
 
 - 🔐 **Firebase Authentication** (Sign Up / Sign In / Delete Account)
-- 🧳 **Firebase Storage** Message read and write functionality. Load all the messages for a specific conversation. Each user has it's own set of conversations and messages inside that conversation, pretty much exactly how ChatGPT application works
+- 🧳 **Firebase Storage** Message read and write functionality. Load all the messages for a specific conversation. Each user has their own set of conversations and messages inside that conversation, pretty much exactly how the ChatGPT application works
 - 💬 **Supports Markdown** Message gets all modern Markdown support such as Bold Text, italics, underline, etc.
 - 🔄 **DeepSeek API Integration** via OpenRouter
 - 🧠 **Context-Aware Chat**: Chat headline updates dynamically based on chat content
 - 🎨 **Polished UI** With support for Dark Mode!
 - 🧰 Modular and scalable **backend & network architecture**
-- 🔍 **Support for Search** Find exactly what you're looking for in the conversation sidebar with the Search function. 
+- 🔍 **Support for Search** Find exactly what you're looking for in the conversation sidebar with the Search function.
+- 👤 **Support for Persona Selection** Tailor the AI for your needs using the Persona Selector menu.
 
 ---
 
@@ -58,7 +59,7 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 
 ---
 
-## <a target="_blank" href="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" style="display: inline-block;"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="35" height="35" /></a> Firebase Implementation
+## </a><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="firebase" width="42" height="42" /></a>  Firebase Implementation
 
 - **Sign Up / Sign In / Delete Account**
 - **Store Messages for each User**
@@ -110,11 +111,9 @@ ChatAI is a sleek and powerful conversational application that integrates **Deep
 2. Setup dependencies:
    - Add your OpenRouter API key in Constants.swift
    - Get your own GoogleServiceInfo.plist file from Firebase
+   - Make sure the name is the same as stated.
 
-3. Run the app:
-   ```bash
-   open ChatAI.xcodeproj 
-   ```
+3. Run the app from the XCode Project File to your simulator or best use it on your iPhone!
 
 ---
 
